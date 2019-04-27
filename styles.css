@@ -4,23 +4,23 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
-h1{
+h1 {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 70pt;
 	text-align: center;
 }
 
-h2{
+h2 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;	
 }
 
-h3{
+h3 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 }
 
-p{
+p {
 	font-family: 'Roboto', sans-serif;
 	
 }
@@ -28,9 +28,11 @@ p{
 a {
 	font-family: 'Amatic SC', cursive;
 	color: black;
+	text-decoration: none;
+	font-size: 40pt;
 }
 
-.me{
-	width: 20vw;
+.me {
+	width: 5vw;
 	height: auto;
 }
