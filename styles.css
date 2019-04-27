@@ -1,0 +1,25 @@
+/*
+font-family: 'Amatic SC', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+h1{
+	font-family: 'Amatic SC', cursive;
+	font-size: 50pt;
+	text-align: center;
+}
+
+h2{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 100;
+}
+
+h3{
+
+}
+
+p{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+}
