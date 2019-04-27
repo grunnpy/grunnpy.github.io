@@ -31,5 +31,6 @@ a {
 }
 
 .me{
-	size: 20vw auto;
+	width: 20vw;
+	height: auto;
 }
