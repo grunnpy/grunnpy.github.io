@@ -5,23 +5,28 @@ font-family: 'Roboto', sans-serif;
 */
 
 h1{
-	font-family: 'Amatic SC', cursive;
-	font-size: 50pt;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 70pt;
 	text-align: center;
 }
 
 h2{
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 100;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;	
 }
 
 h3{
-
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 }
 
 p{
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	
+}
+a {
+	font-family: 'Amatic SC', cursive;
+	color: black;
 }
 
 #me{
