@@ -76,7 +76,7 @@ a {
 }
 
 a:hover {
-	color: rgba(255, 195, 106);
+	/*color: rgba(255, 195, 106);*/
 }
 
 nav {	text-align: center;
@@ -103,6 +103,9 @@ nav a {
 	white-space: nowrap;
 	display: inline-block;
 	/*margin-top: 40px;*/
+}
+.subpage:hover {
+	background-color: rgba(255, 195, 106);
 }
 
 #me {
