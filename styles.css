@@ -70,6 +70,7 @@ h5 {
 
 p {
 	font-family: 'Roboto', sans-serif;
+	/*display: inline-block;*/
 	
 }
 
@@ -159,8 +160,15 @@ footer {
 .wearableIMG {
 	width: 60vw;
 	height: auto;
-	display: block;
-	float: right;
+	display: inline-block;
+	margin: 25px 50px 25px 0px;
+	/*float: right;*/
+}
+
+.unrealIMG {
+	width: 40vw;
+	height: auto;
+	display: inline-block;
 }
 
 .arIMG {
