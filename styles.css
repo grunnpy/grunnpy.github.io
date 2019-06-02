@@ -184,6 +184,11 @@ footer {
 }
 
 video {
-	width: 300px;
-	height: auto;
+	
+	height: 400px;
+	width: auto;
+}
+
+.topicLinks:hover {
+	color: rgba(255, 195, 106);
 }
