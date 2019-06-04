@@ -96,6 +96,10 @@ nav a {
 	font-size: 24pt;
 }
 
+nav a:hover {
+	color: rgba(255, 195, 106);
+}
+
 .subpageGroup {
 	/*text-align: center;*/
 }
@@ -192,7 +196,9 @@ video {
 .topicLinks:hover {
 	color: rgba(255, 195, 106);
 }
-
+.labText {
+	margin-top: 30px;
+}
 
 
 /*SLIDESHOW*/
@@ -207,7 +213,7 @@ video {
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides1, .mySlides2 {
   display: none;
 }
 
@@ -239,15 +245,16 @@ video {
 }
 
 /* Caption text */
-/*.text {
-  color: #f2f2f2;
-  font-size: 15px;
+.text {
+  color: black;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  /*bottom: 4px;*/
   width: 100%;
   text-align: center;
-}*/
+}
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -291,4 +298,30 @@ video {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+
+/*BUTTON TO TOP*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(250, 250, 250, 0.5);
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+#myBtn:hover {
+    background-color: rgba(255, 195, 106, 0.5);
+    color: black;
 }
