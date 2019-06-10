@@ -18,13 +18,14 @@ function topFunction() {
 
 // SLIDESHOWS IN LAB PAGE
 
-var slideIndex = [1, 1, 1, 1];
+var slideIndex = [1, 1, 1, 1, 1];
 /* Class the members of each slideshow group with different CSS classes */
-var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"] 
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"] 
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
 showSlides(1, 3);
+showSlides(1, 4);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
