@@ -28,9 +28,11 @@
 		<h3>Multiple blinking LED’s</h3>
 		<h4>Assignment 3C</h4>
 		<img class="arduinoIMG" src="images/arduino/3.JPG">
+		
 		<video controls>
 			<source src="images/arduino/3.mp4" type="video/mp4">
 		</video>
+		<img class="arduinoCode" src="images/arduino/3code.PNG">
 		<p>For this assignment I had to make a circuit with two LED lights and write a code where one light would blink twice as fast as the other one. I took the exemplary built-in code for one blinking LED and adapted it so it works according to the assignment by adding the second LED.</p>
 		<p>This exercise was challenging, because I had not only to understand the timeline of the blinking lights, but also how the code works – what different built-in functions like pinMode() do. In the end I succeeded after writing down the order of LED states, e. g. when the green light should be on and when off. I had to understand, that the green light should be turned off and on twice while red light stays on. This was tricky, since I had troubles with perceiving what effect the delay has and how it works.</p>
 		
@@ -40,25 +42,30 @@
 		<video controls>
 			<source src="images/arduino/4C.mp4" type="video/mp4">
 		</video>
+		<img class="arduinoCode" src="images/arduino/4code.PNG">
 		<p>In this assignment instead of turning LEDs simply on and off, challenge was to achieve fading effect with lights. For this I used a built-in function analogWrite() that sets the brightness of selected LED between the range of 0 and 255, where 0 is completely off and 255 completely on. Also some adjustments to the board needed to be made – not all pins are suitable pulse width modulation, in other words – pin pulses between HIGH and LOW at very high frequency. I chose pins 10 and 11 on my board. After completing A and B parts of exercise, I had to make one LED slowly fade in while other fades outs at the same time. I achieved this by adding second analogWrite() function for another LED and reusing value set in the loop (in my case it was integer x) so brightness is reversed.</p>
 
 		<h3>Fading LED’s controlled with potmeter</h3>
 		<h4>Assignment 6C</h4>
 		<img class="arduinoIMG" src="images/arduino/6_2.JPG">
+		
 		<video controls>
 			<source src="images/arduino/6.mp4" type="video/mp4">
 		</video>
 		<video controls>
 			<source src="images/arduino/6B.mp4" type="video/mp4">
 		</video>
+		<img class="arduinoCode" src="images/arduino/6code.PNG">
 		<p>For this assignment I had to add a potmeter – rotary knob, that gives an analog input. I changed the circuit according to the given picture example in workbook – connected potmeter and additional jumper wires in relevant places. In the code I used analogRead() function to read the value of potmeter. It could be printed in serial monitor, where whenever knob was turned the changed value would appear. In order to translate this value to the one I could use for brightness of LEDs I used map() function, which changes value in existing range to the desired one. In my case, potmeter returned the value between 0 and 1023 and brightness is defined between 0 and 255. Making one LED fade in while other fades out was relatively easy, because this exact effect was used before in assignment 4C.</p>
 
 		<h3>Controlling LED’s with light</h3>
 		<h4>Assignment 7</h4>
 		<img class="arduinoIMG" src="images/arduino/7_3.JPG">
+		
 		<video controls>
 			<source src="images/arduino/7.mp4" type="video/mp4">
 		</video>
+		<img class="arduinoCode" src="images/arduino/7code.PNG">
 		<p>In this assignment I connected one LDR light sensitive resistor together with 10kΩ resistor to my circuit that has 2 LED lights. This circuit is used to dim those two LED lights depending on light state in the room. When the code is uploaded, I opened serial monitor that showed me the value of amount of light that has been captured with LDR. Whenever I would put my hand above the LDR blocking some light, the number would drop from around 908 to 500. After distinguishing these two values, I used a map() function as previously in assignment 6C, that converts wanted value from one specified range to another range. Since the lights were flickering whenever I would cover LDR with my hand, I used constrain() function as well, which puts boundaries and doesn’t let the value reach beyond them. This made LEDs to turn of completely when LDR was covered with hand.</p>
 
 		<h3>Voltage divider</h3>
@@ -77,33 +84,41 @@
 		<h3>Arduino and Processing</h3>
 		<h4>Assignment 9B</h4>
 		<img class="arduinoIMG" src="images/arduino/9proc.JPG">
+		
 		<video controls>
 			<source src="images/arduino/9.mp4" type="video/mp4">
 		</video>
+		<img class="arduinoCode" src="images/arduino/9code.PNG">
 		<p>This assignment required not only knowledge of Arduino, but I also had to remember the environment of Processing and how it works. Processing is a programming software created visual artists to easily and quickly display visuals on screen with only minimum knowledge of coding. Additionally this time, Arduino was only used as an input and I had output displayed on my Processing screen, depending on what code I wrote in there. Given example had a circle displayed on the screen, whose size was determined by Arduino board input, in my case it was a light sensor. I changed up the code so that depending on the light perceived, circle on the screen moves and leaves a disappearing trace behind. In order to achieve this result, I changed the background and ellipse colours and used arrays to keep information about the ellipse’s position to be able to display a trace.</p>
 
 		<h3>Buttons</h3>
 		<h4>Assignment 10F</h4>
 		<img class="arduinoIMG" src="images/arduino/10.jpg">
+		
 		<video controls>
 			<source src="images/arduino/10.mp4" type="video/mp4">
 		</video>
+		<img class="arduinoCode" src="images/arduino/10code.PNG">
 		<p>For this assignment in the beginning I made a circuit with a button and LED light pin. By changing up the code few times and adding a second button I have achieved the LED light to light up when either left or right button is pressed but not both. I achieved this result by using if statement and two Boolean operators - && (logical and) and || (logical or). They were used in such order, that first I made sure that one of the buttons is pressed, the other is not or otherwise. This would let me achieve the results that I wanted. With this exercise I had to remember my previous programming knowledge and think about which combination of logical operators would be suitable for this case.</p>
 
 		<h3>Servomotor</h3>
 		<h4>Assignment 11B</h4>
 		<img class="arduinoIMG" src="images/arduino/11.jpg">
+		
 		<video controls>
 			<source src="images/arduino/11.mp4" type="video/mp4">
 		</video>
+		<img class="arduinoCode" src="images/arduino/11code.PNG">
 		<p>In this assignment I attached a servomotor to my circuit – it’s a motor, that turn to precise position, that can be used in remote controlled vehicles or moving security cameras. It was interesting, that this gadget required an additional library in the Arduino sketch. In this exercise I had to make servo move in interesting way. I achieved that by using several for cycles, with different position values, ranges and different increment or decrement values. This resulted in my servo moving in a rhythmical way at different speeds. Although only when I finished assignments related to servomotor, I noticed that I didn’t put on the “wing”, but in any case, movement can be seen in the moving gears without the big need of having attached “wing”.</p>
 
 		<h3>Controlling servomotor with input</h3>
 		<h4>Assignment 12B</h4>
 		<img class="arduinoIMG" src="images/arduino/12.jpg">
+		
 		<video controls>
 			<source src="images/arduino/12.mp4" type="video/mp4">
 		</video>
+		<img class="arduinoCode" src="images/arduino/12code.PNG">
 		<p>This assignment at first required potentiometer connected to the circuit and then it changed to two buttons. I found it hard to work with potentiometer – it was hard to see the input result, in my eyes due to delay and same position value, that caused servo to move in small ranges. On the other hand, buttons where quite straightforward and easy to code. Only one thing that I found hard to figure was how to make it not to move out of 0 and 160 range. In the end, I wrote an if statement, that would check which button is pressed, then I would set variable’s i value as 0 or 160 depending on the direction that motor would need to go and start a for loop in which I would determine whether pos value is in range or not. This code resulted in servo moving clockwise and counter clockwise depending on which button was pressed.</p>
 
 		<h3>Sound</h3>

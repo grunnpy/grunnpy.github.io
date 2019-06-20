@@ -186,6 +186,10 @@ footer {
 	width: 300px;
 	height: auto;
 }
+.arduinoCode {
+	height: 400px;
+	width: auto;
+}
 
 video {
 	
