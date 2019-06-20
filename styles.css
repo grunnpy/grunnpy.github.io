@@ -203,6 +203,19 @@ video {
 .labText {
 	margin-top: 30px;
 }
+.labIMG {
+	width: 30vw;
+	height: auto;
+}
+.link {
+	margin: 20px 0;
+	padding: 20px 0;
+
+}
+
+.link:hover {
+	color: rgba(255, 195, 106);
+}
 
 
 /*SLIDESHOW*/
